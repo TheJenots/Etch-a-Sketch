@@ -15,11 +15,11 @@ function createGrid(num) {
     if (num === null) {
         createGrid(16);
     } else if (num >100) {
-        alert("Square count too big. Please enter number between 2 and 100!");
-        createGrid(prompt("Number?"));
+        alert("Number of squares too big. Please enter number between 2 and 100!");
+        createGrid(prompt("Please enter the desired number of squares from 2-100"));
     } else if (num < 2) {
-        alert("Square count too small. Please enter number between 2 and 100!");
-        createGrid(prompt("Number?"));
+        alert("Number of squares too small. Please enter number between 2 and 100!");
+        createGrid(prompt("Please enter the desired number of squares from 2-100"));
     }
     else {
         //Creates grid and add needed event listeners
@@ -36,7 +36,7 @@ function createGrid(num) {
 //Clear grid and offers create new
 function clear() {
     container.querySelectorAll("div").forEach(div => div.remove());
-    createGrid(prompt("Number?"));    
+    createGrid(prompt("Please enter the desired number of squares from 2-100"));    
 }
 
 //Change background color of element
