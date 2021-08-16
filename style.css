@@ -1,0 +1,54 @@
+:root {
+    --clr-text-shadow: #492f33;
+    --clr-btn-bg: #5baaf5;
+    --clr-box-shadow: gray;
+}
+
+body {
+    background-color: rgb(248, 244, 244);
+    text-align: center;
+}
+
+header {
+    font-size: 2rem;
+    font-weight: 800;
+    color: black;
+    text-shadow: -2px 0 var(--clr-text-shadow), 0 2px var(--clr-text-shadow), 2px 0 var(--clr-text-shadow), 0 -2px var(--clr-text-shadow);
+    letter-spacing: 10px;
+}
+
+.control-panel {
+    padding: 10px 0px;
+    height: 7vh;
+}
+
+button {
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: var(--clr-btn-bg);
+    box-shadow: 4px 4px 5px var(--clr-box-shadow);
+    color:whitesmoke;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 10px var(--clr-btn-bg);    
+}
+
+.container {
+    background-color: white;
+    margin: auto;
+    display: grid;
+    height: 75vh;
+    width: 75vh;
+    border: 5px solid rgb(87, 85, 85);
+    box-shadow: 15px 15px 5px var(--clr-box-shadow);
+}
+
+.container div {
+    border: 1px dotted beige;
+}
